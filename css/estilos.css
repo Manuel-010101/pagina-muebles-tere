@@ -408,7 +408,7 @@ footer {
             align-items: center;
         }
 
-        .cards .card {
+        .cards .card img{
             width: 90px;
             height: 90px;
         }
