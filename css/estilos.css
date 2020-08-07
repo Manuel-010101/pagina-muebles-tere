@@ -70,15 +70,14 @@ header .textos-header{
 }
 
 .textos-header h1{
-    font-size: 50px;
-    color: rgb(82, 76, 81);
-
+   font-size: 50px;
+   color: #fff; 
 }
 
 .textos-header h2{
     font-size: 30px;
     font-weight: 300;
-    color: rgb(82, 76, 81);
+    color: #fff;   
 }
 
 .wave{
@@ -87,8 +86,7 @@ header .textos-header{
     width: 100%;
 }
 
-
-/*Abaut as*/
+/* About us */
 
 main .sobre-nosotros{
     padding: 30px 0 60px 0;
@@ -97,23 +95,22 @@ main .sobre-nosotros{
 .contenedor-sobre-nosotros{
     display: flex;
     justify-content: space-evenly;
-
 }
 
-.imagen-about-us {
+.imagen-about-us{
     width: 48%;
 }
 
-.sobre-nosotros .contenido-textos {
+.sobre-nosotros .contenido-textos{
     width: 48%;
 }
 
-.contenido-textos h3 {
+.contenido-textos h3{
     margin-bottom: 15px;
 }
 
-.contenido-textos h3 span {
-    background: #760dcc;
+.contenido-textos h3 span{
+    background: #4d0686;
     color: #fff;
     border-radius: 50%;
     display: inline-block;
@@ -125,49 +122,48 @@ main .sobre-nosotros{
     margin-right: 5px;
 }
 
-.contenido-textos p {
+.contenido-textos p{
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
 }
 
-/* Galeria*/
+/* Galeria */
 
-.portafolio {
+.portafolio{
     background: #f2f2f2;
 }
 
-.galeria-port {
+.galeria-port{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.imagen-port {
-    width: 25%;
+.imagen-port{
+    width: 24%;
     margin-bottom: 10px;
-    height: 230px;
+    height: 198px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
 }
 
-.imagen-port > img {
+.imagen-port > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.hover-galeria {
+.hover-galeria{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    transform: scale(0);
-    /* transform: scale(0); */
-    background: hsla(273, 91%, 27%, 0.7);
+    transform: scale(1);
+    background: rgba(127, 118, 134, 0.7);
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -175,27 +171,28 @@ main .sobre-nosotros{
     flex-direction: column;
 }
 
-.hover-galeria {
+.hover-galeria img{
     width: 50px;
 }
 
-.hover-galeria p {
+.hover-galeria p{
     color: #fff;
+
 }
 
-.imagen-port:hover .hover-galeria {
-    transform: scale(1);
+.imagen-port:hover .hover-galeria{
+    transform: scale(0);
 }
 
-/* clientes */
+/* Clientes */
 
-.cards {
+.cards{
     display: flex;
     justify-content: space-evenly;
 }
 
-.cards .card {
-    background: #4d0686;
+.cards .card{
+    background: #be24ec;
     display: flex;
     width: 46%;
     height: 200px;
@@ -205,7 +202,7 @@ main .sobre-nosotros{
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
 
-.cards .card img {
+.cards .card img{
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -214,58 +211,90 @@ main .sobre-nosotros{
     display: block;
 }
 
-.cards .card > .contenido-texto-card {
+.cards .card > .contenido-texto-card{
     width: 60%;
     color: #fff;
-
 }
 
-.cards .card > .contenido-texto-card p {
+.cards .card > .contenido-texto-card p{
     font-weight: 300;
     padding-top: 5px;
 }
 
-/* our team*/
+/*  Our team */
 
-.about-services {
+.about-services{
     background: #f2f2f2;
     padding-bottom: 30px;
 }
 
-.servicio-cont {
-    display: flex;
+
+.servicio-cont{
+    display:flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.servicio-ind {
+.servicio-ind{
     width: 28%;
     text-align: center;
 }
 
-.servicio-ind img {
+.servicio-ind img{
     width: 90%;
 }
 
-.servicio-ind h3 {
+.servicio-ind h3{
     margin: 10px 0;
 }
 
-.servicio-ind p {
+.servicio-ind p{
     font-weight: 300;
     text-align: justify;
 }
 
-/* footer*/
+ /* our team */
 
-footer {
-    background: #1FA2FF;
+ .about-services{
+     background: #f2f2f2;
+     padding-bottom: 30px;
+ }
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: #929291;
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
 }
 
-.contenedor-footer {
+.contenedor-footer{
     display: flex;
     width: 90%;
     justify-content: space-evenly;
@@ -274,30 +303,28 @@ footer {
     border-bottom: 1px solid #ccc;
 }
 
-.content-foo {
+.contenedor-foo{
     text-align: center;
-
 }
 
-.content-foo h4 {
-    color: #fff;
-    border-bottom: 5px solid #f30707;
+.content-foo h4{
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid #72d123;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-.content-foo p {
-    color: rgb(121, 245, 4);
+.content-foo p{
+    color: rgb(0, 0, 0);
 }
 
-
-.titulo-final {
+.titulo-final{
     text-align: center;
     font-size: 24px;
     margin: 20px 0 0 0;
-    color: #0c0c0c;
-
+    color: #fff;
 }
+
 
 @media screen and (max-width:900px) {
     header {
@@ -361,10 +388,9 @@ footer {
     .servicio-ind img {
         width: 90%;
 
-    }
 
     @media screen and (max-width:500px) {
-        nav {
+        nav{
             text-align: center;
             padding: 30px 0 0 0;
         }
@@ -374,7 +400,7 @@ footer {
         }
 
         .textos-header h1 {
-            font-size: 30px;
+            font-size: 35px;
         }
 
         .textos-header h2 {
@@ -383,12 +409,12 @@ footer {
 
         /* about us */
 
-        .imagen-abaut-us {
+        .imagen-abaut-us{
             margin-bottom: 60px;
             width: 99%;
         }
 
-        .sobre-nosotros .contenido-textos {
+        .sobre-nosotros .contenido-textos{
             width: 95%;
         }
 
@@ -396,7 +422,7 @@ footer {
         /*Galeria*/
 
         .imagen-port {
-            width: 99%;
+            width: 95%;
         }
 
         /*Clientes*/
@@ -419,7 +445,7 @@ footer {
             border: none;
         }
 
-        .contenedor-foo {
+        .content-foo {
             margin-bottom: 20px;
             text-align: center;
         }
@@ -429,14 +455,14 @@ footer {
         }
 
         .content-foo p {
-            color: #ccc;
-            border-bottom: 1px solid #f2f2f2;
+            color: rgb(0, 0, 0);
+            border-bottom: 1px solid #b6b6b6;
             padding-bottom: 20px;
         }
 
         .titulo-final {
             font-size: 20px;
         }
-    }
+    
 
 }
